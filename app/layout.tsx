@@ -3,7 +3,9 @@ import dynamic from 'next/dynamic'
 const Plum = dynamic(() => import('@/components/Plum'), {
   ssr: false,
 })
-import Header from '../components//Header'
+import Header from '../components/Header'
+import Main from '../components/Main'
+import Footer from '../components/Footer'
 import './globals.css'
 import type { Metadata } from 'next'
 const ThemeProvider = dynamic(() => import('../components/Header/components//Theme/provider'), {
@@ -23,8 +25,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div id="__next">
             <div id="app" className="h-100% flex flex-col">
               <Header />
-              <main>{children}</main>
-              <footer>footer</footer>
+              <Main>{children}</Main>
+              <Footer />
             </div>
             <Plum />
           </div>
