@@ -1,0 +1,9 @@
+:root {
+  --an-bg-color: #fff;
+  --an-text-color: #050505;
+  --an-link-color: #111827;
+}
+
+html.dark {
+  --an-bg-color: #1a1a1c;
+}
