@@ -4,8 +4,6 @@
 @import './variable.css';
 
 html {
-  background-color: var(--an-bg-color);
-  color: var(--an-text-color);
   width: 100vw;
   height: 100vh;
   overflow: hidden;

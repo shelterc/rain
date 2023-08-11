@@ -4,6 +4,8 @@
   --an-link-color: #111827;
 }
 
+
+
 html.dark {
-  --an-bg-color: #1a1a1c;
+  color-scheme: dark;
 }

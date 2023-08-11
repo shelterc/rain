@@ -1,5 +1,4 @@
 import dynamic from 'next/dynamic'
-// import Plum from '@/components/Plum'
 const Plum = dynamic(() => import('@/components/Plum'), {
   ssr: false,
 })
@@ -8,9 +7,7 @@ import Main from '../components/Main'
 import Footer from '../components/Footer'
 import './globals.css'
 import type { Metadata } from 'next'
-const ThemeProvider = dynamic(() => import('../components/Header/components//Theme/provider'), {
-  ssr: false,
-})
+import ThemeProvider from '../components/Header/components//Theme/provider'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -35,3 +32,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   )
 }
+
+
