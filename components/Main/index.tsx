@@ -1,8 +1,14 @@
-interface IProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> {}
+import { ComponentPropsWithoutRef } from 'react'
+
+interface IProps extends ComponentPropsWithoutRef<'main'> {}
 
 const Index = (props: IProps) => {
-  const { children } = props
-  return <main className="flex-auto">{children}</main>
+  const { children, className, ...attr } = props
+  return (
+    <main className={`${className} flex-auto`} {...attr}>
+      {children}
+    </main>
+  )
 }
 
 export default Index

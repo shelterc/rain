@@ -5,10 +5,11 @@ const test = async () => {
   const res = await getData({
     key: 'username',
   })
-  return res.data
+  return res
 }
 
 const Index = async () => {
+  await test()
   const { data }: { data: Array<string> } = await test()
   return (
     <div className="text-30px">
