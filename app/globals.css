@@ -15,19 +15,13 @@ body {
   height: 100%;
   overflow-y: auto;
 }
-body::before {
+/* body::before {
   position: fixed;
   content: '';
   inset: 0;
   background-image: url('/dot.png');
   background-repeat: repeat;
-  background-size: 200px;
+  background-size: 50px;
   opacity: 0.06;
   z-index: 0;
-}
-
-#__next {
-  height: 100%;
-  position: relative;
-  z-index: 1;
-}
+} */

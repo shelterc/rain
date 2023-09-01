@@ -3,9 +3,9 @@ import { ComponentPropsWithoutRef } from 'react'
 interface IProps extends ComponentPropsWithoutRef<'main'> {}
 
 const Index = (props: IProps) => {
-  const { children, className, ...attr } = props
+  const { children } = props
   return (
-    <main className={`${className} flex-auto`} {...attr}>
+    <main className={`flex-auto`}>
       {children}
     </main>
   )

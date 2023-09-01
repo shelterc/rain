@@ -1,7 +1,5 @@
 'use client'
-
-import { run } from 'node:test'
-import { MutableRefObject, useEffect, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 
 const Index = () => {
   const timer = useRef<any>(null)
